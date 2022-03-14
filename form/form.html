@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Andika&family=Baloo+2&family=Carter+One&display=swap"
+        rel="stylesheet">
+    <title>Forms</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 30px 300px;
+            text-align: center;
+            align-items: center;
+            font-family: 'Andika';
+            font-family: 'Andika';
+            font-size: 17px;
+            background: linear-gradient(180deg, rgba(204,163,77,1) 1%, rgba(186,156,85,1) 2%, rgba(250,232,191,1) 89%);
+            color: #583e06;
+    text-shadow: 1px 1px 0 #ebb484;
+    font-weight: 700;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #745b1b;
+            text-shadow: 1px 1px 0 #fff0d8;
+            font-family: 'Carter One';
+            letter-spacing: 2px;
+        }
+
+        .name {
+            margin-bottom: 30px;
+            
+        }
+
+        .name input {
+            margin-left: 40px;
+            width: 300px;
+            height: 30px;
+            padding: 10px;
+            background: linear-gradient(180deg, rgba(126,113,57,1) 0%, rgba(92,77,32,1) 1%, rgba(133,105,43,1) 66%, rgba(144,123,68,1) 100%);
+            border: 1px solid#5c4d20;
+            border-radius: 5px;
+        }
+        .name input:hover{
+            color: white;
+            font-size: 15px;
+        }
+
+        .email input {
+            margin-left: 70px;
+            width: 300px;
+            height: 30px;
+            padding: 10px;
+            background: linear-gradient(180deg, rgba(126,113,57,1) 0%, rgba(92,77,32,1) 1%, rgba(133,105,43,1) 66%, rgba(144,123,68,1) 100%);
+            border: 1px solid#5c4d20;
+            border-radius: 5px;
+        }
+        .email input:hover{
+            color: white;
+            font-size: 15px;
+
+        }
+
+        .passward input {
+            margin: 30px 0px 20px 45px;
+            width: 300px;
+            height: 30px;
+            padding: 10px;
+            background: linear-gradient(180deg, rgba(126,113,57,1) 0%, rgba(92,77,32,1) 1%, rgba(133,105,43,1) 66%, rgba(144,123,68,1) 100%);
+            border: 1px solid#5c4d20;
+            border-radius: 5px;
+        }
+        .passward input:hover{
+            color: white;
+            font-size: 15px;
+
+        }
+        .date-of-birth input {
+            margin: 0px 0px 20px 30px;
+            width: 300px;
+            height: 30px;
+            padding: 10px;
+            background: linear-gradient(180deg, rgba(126,113,57,1) 0%, rgba(92,77,32,1) 1%, rgba(133,105,43,1) 66%, rgba(144,123,68,1) 100%);
+            border: 1px solid#5c4d20;
+            border-radius: 5px;
+        }
+
+        .gender span {
+            margin-right: 140px;
+        }
+
+        .gender input {
+            margin-left: 5px;
+            background: linear-gradient(180deg, rgba(126,113,57,1) 0%, rgba(92,77,32,1) 1%, rgba(133,105,43,1) 66%, rgba(144,123,68,1) 100%);
+            border: 1px solid#5c4d20;
+            border-radius: 5px;
+        }
+
+        .mobile input {
+            margin: 10px 0px 10px 50px;
+            width: 300px;
+            height: 30px;
+            padding: 10px;
+            background: linear-gradient(180deg, rgba(126,113,57,1) 0%, rgba(92,77,32,1) 1%, rgba(133,105,43,1) 66%, rgba(144,123,68,1) 100%);
+            border: 1px solid#5c4d20;
+            border-radius: 5px;
+        }
+        .mobile input:hover{
+            color: white;
+            font-size: 15px;
+
+        }
+        .address textarea {
+            margin-left: 60px;
+            background: linear-gradient(180deg, rgba(126,113,57,1) 0%, rgba(92,77,32,1) 1%, rgba(133,105,43,1) 66%, rgba(144,123,68,1) 100%);
+            border: 1px solid#5c4d20;
+            border-radius: 5px;
+            color: white;
+            
+        }
+        .submit input {
+            background: linear-gradient(180deg, rgb(194, 154, 54) 44%, rgb(177, 130, 21) 59%);
+            border: 2px solid rgb(160, 121, 22) ;
+            padding: 5px 22px;
+            color: white;
+            cursor: pointer;
+            border: 1px solid gray;
+            border-radius: 4px;
+            font-family: 'Carter One', cursive;
+            text-shadow: 1px 1px 0 #422809;
+            font-size: 16px;
+            margin-left: 200px;
+        }
+        .submit input:hover{
+            background: rgb(241,190,59);
+background: linear-gradient(180deg, rgb(189, 136, 3) 44%, rgb(231, 165, 12) 59%);
+        }
+
+        .reset input {
+            background: linear-gradient(180deg, rgb(194, 154, 54) 44%, rgb(177, 130, 21) 59%);
+            border: 2px solid rgb(160, 121, 22) ;
+            padding: 4px 28px;
+            color: white;
+            cursor: pointer;
+            border: 1px solid gray;
+            border-radius: 4px;
+            font-family: 'Carter One', cursive;
+            text-shadow: 1px 1px 0 #422809;
+            font-size: 16px;
+            margin-left: 30px;
+        }
+        .reset input:hover{
+            background: rgb(241,190,59);
+background: linear-gradient(180deg, rgb(189, 136, 3) 44%, rgb(231, 165, 12) 59%);
+        }
+        .btn{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        Sign in Form
+    </h1>
+    <form action="backened.php">
+        <div class="name">
+            <label for="Name">First Name: </label>
+            <input type="text" placeholder="Enter your First Name">
+        </div>
+        <div class="name">
+            <label for="Name">Last Name: </label>
+            <input type="text" placeholder="Enter your Last Name">
+        </div>
+        <div class="name">
+            <label for="Name">Nick Name: </label>
+            <input type="text" placeholder="Enter your Nick Name">
+        </div>
+        <div class="email">
+            <label for="email">E-mail:</label>
+            <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Enter your email">
+        </div>
+        <div class="passward">
+            <label for="passaward">Passaward:</label>
+            <input type="pxtext" pattern=".{8,}" placeholder="Enter your passward">
+        </div>
+        <br />
+        <div class="date-of-birth">
+            <label for="date">Date of Birth:</label>
+            <input type="date" name="myDate" id="Date">
+        </div>
+        <br />
+        <div class="mobile">
+            <label for="Mobile">Mobile no.</label>
+            <input type="number">
+        </div>
+        <br />
+        <div class="gender">
+            <span>Gender: </span> Male
+            <input type="radio" name="mygender" id="Gender">
+            Female<input type="radio" name="mygender" id="Gender">
+            Other<input type="radio" name="mygender" id="Gender">
+        </div>
+        <br />
+        <br />
+        <div class="address">
+            Address:
+            <textarea name="myText" id="write" cols="40" rows="5"></textarea>
+        </div>
+        <br />
+        <div class="btn">
+            <div class="submit">
+                <input type="submit" name="" id="submit">
+            </div>
+            <br />
+            <div class="reset">
+                <input type="reset" name="" id="reset">
+            </div>
+        </div>
+        <br />
+        <hr />
+        <hr />
+        <hr />
+        <br><br>
+    </form>
+</body>
+
+</html>
